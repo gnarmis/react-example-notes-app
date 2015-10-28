@@ -15,7 +15,7 @@ module.exports = (
     <Route path="about" component={AboutView} />
     <Route path="notes" component={NotesView} />
     <Route path="notes/new" component={CreateNoteView} />
-      <Route path="notes/:id" component={NoteDetailView} />
+    <Route path="notes/:id" component={NoteDetailView} />
     <Route path="*" component={NotFoundView} />
   </Route>
 )
