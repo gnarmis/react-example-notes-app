@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 let NotesView = React.createClass({
   getInitialState() {
@@ -10,6 +11,7 @@ let NotesView = React.createClass({
   render() {
     return (
       <div className="notes-view">
+        <p><Link to="/notes/new">New Note</Link></p>
         <NotesList notes={this.state.notes} />
       </div>
     )
@@ -23,9 +25,11 @@ let NotesList = React.createClass({
     })
 
     return (
-      <ul className="notes-list">
-        {noteItems}
-      </ul>
+      <div className="notes-list">
+        <ul>
+          {noteItems}
+        </ul>
+      </div>
     )
   }
 })
@@ -34,7 +38,7 @@ let NoteItem = React.createClass({
   render() {
     return (
       <li>
-        <p>{this.props.title}</p>
+        <p><b><Link to={`/notes/${this.props.id}`}>{this.props.title}</Link></b></p>
         <p>{this.props.content}</p>
       </li>
     )
