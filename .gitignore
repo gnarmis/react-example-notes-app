@@ -1,0 +1,9 @@
+# The generated bundle.js
+public/bundle.js
+
+# Node and NPM related files
+node_modules
+npm-debug.log
+
+# Webpack related files
+.webpack_build_cache

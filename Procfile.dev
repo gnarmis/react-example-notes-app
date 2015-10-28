@@ -1,0 +1,2 @@
+server: npm run devserve
+builder: npm run devbuild
