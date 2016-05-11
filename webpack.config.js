@@ -7,7 +7,6 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.css$/, loader: 'style!css' },
-      { test: /\.jsx$/, loader: 'jsx-loader' },
       {
         test: /\.jsx?$/,
         exclude: /(node_modules)/,
